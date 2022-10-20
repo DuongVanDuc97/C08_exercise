@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var student_1 = require("./student");
+var studentManager_1 = require("./studentManager");
+var student1 = new student_1.Student("Duke", "1", 6, 8);
+var student2 = new student_1.Student("Nam", "2", 7, 10);
+var student3 = new student_1.Student("Hai", "3", 4, 6);
+var studentManager = new studentManager_1.StudentManager();
+studentManager.add(student1);
+studentManager.add(student2);
+studentManager.add(student3);
+// studentManager.showAll();
+studentManager.sortByScore();
+console.log(studentManager.findByName("Duke"));
